@@ -81,3 +81,20 @@ class ServerConfiguration: GRpcServerBuilderConfigurer() {
     }
 }
 ```
+
+
+#### Capturing HTTP2 packages using Wireshark
+* https://wiki.wireshark.org/HTTP2
+* https://kiririmode.hatenablog.jp/entry/20190501/1556722143
+
+1. Select a line and click `Decode As...`.
+
+  <img src="image1.png" width=400>
+2. Set current field to `HTTP2`.
+
+  <img src="image2.png" width=400>
+3. And then, HTTP2 protocols will appear.
+
+  <img src="image3.png" width=500><br>
+  ↓↓↓<br>
+  <img src="image4.png" width=500>
